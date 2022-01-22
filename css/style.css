@@ -1,0 +1,48 @@
+/*class container делает текст посередине, адаптивным и с отступами по бокам*/ 
+/*col-5 указывается 5 из 12 колонок*/
+/*можно добавлять внутри колонки дополнительные ряд с 12 колонками
+
+<div class="container bg">
+	<div class="row"> 
+		<div class="col-6">
+		
+		<div class="container blue">
+		 <div class="row">
+		   <div class="col-6">
+			row inner 1 col 1
+			</div>
+		   <div class="col-6">
+			row inner 1 col 2
+		   </div>
+		   </div>
+		   </div>
+
+*/
+
+/* <div class="col-xl-6"> применение стиля если ширина экрана больше 1200 px*/
+/*<div class="col-xl-1 offset-xl-4 col-5 block"> при разрешении xl применяется отступ и 4 - либо 5*/
+/* в класс row добавляем justify-content-end чтобы пустые поля были заполнены ячейками*/
+.txt {width:50px; background: red}
+.border {border: 1px solid silver}
+
+.block-image { width: 300px}
+
+.main-form {margin: 20px; width: 500px;}
+
+.block {
+	width: 200px;
+	height: 100px;
+	background: #ccc;
+	margin: 20px;
+}
+
+
+.navbar-toggler {outline: none!important;}
+.navbar-toggler:hover {background: #e6e6e6;}
+.card {width:300px;}
+footer {
+	padding: 30px 0;
+	color: #999;
+	text-align: center;
+	background-color: #f9f9f9;
+}

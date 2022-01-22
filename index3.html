@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Bootstrap</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+ <div class="container mt-3 p-3">
+  <a href="#hideObject" class="btn btn-success" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="hideObject">Открыть или скрыть объект</a>
+ 
+ <button class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#hideObject-2" aria-expanded="false" aria-controls="hideObject-2">Открыть или скрыть 2 объект</button>
+ <button class="btn btn-warning" data-bs-toggle="collapse" data-bs-target=".multi_objects" aria-expanded="false" aria-controls="hideObject hideObject-2">Открыть или скрыть все объекты</button>
+ 
+ <div class="collapse multi_objects" id="hideObject" >
+  <div class="mt-3 alert alert-success"><p> asdf asdf asdf asdf asdf asdf asdf asdf asdf as df</p></div>
+ </div>
+ 
+  <div class="collapse multi_objects" id="hideObject-2">
+  <div class="alert alert-success"><p> asdf asdf asdf asdf asdf asdf asdf asdf asdf as df</p></div>
+ </div>
+</div>
+
+<div class="container mt-5">
+ <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal-window">Открыть модальное окно</button></div>
+<div class="modal fade" id="modal-window" tabindex="-1" role="dialog" aria-labelledby="modal-window-label" aria-hidden="true">
+ <div class="modal-dialog modal-dialog-scrollable" role="document">
+  <div class="modal-content">
+    
+	<div class="modal-header">
+      <h5 class="modal-title" id="modal-window">Название окна</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+	
+	<div class="modal-body">
+	<p>asdfl asldfk as fdl kj; lkj;as lj;alsdkf j;alsk j;alsk jf</p>
+	</div>
+	
+	<div class="modal-footer">
+      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Закрыть</button>
+    </div>
+   </div>
+ </div>
+</div>
+
+<div class="container mt-5">
+  <div class="btn-group dropend">
+	     <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		 Нажми на меня
+		 </button>
+	<div class="dropdown-menu">
+	<form class="px-4 py-3">
+	<div class="form-group">
+	<label for="exampleDropdownFormEmail1">Email address</label>
+	<input type="e-mail" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+	 </div>
+	 
+	 <div class="form-group">
+	 <label for="exampleDropdownFormPassword1">Password</Label>
+	 <input type="password" class="form-control" id="exampleDropdownPassword1" placeholder="Password">
+	 </div>
+	 
+	 <div class="form-group">
+	 <div class="form-check">
+	 <input type="checkbox" class="form-check-input" id="dropdownCheck">
+	 <label class="form-check-label"for="dropdownCheck">Remember me</Label>
+	 </div>
+	 </div>
+	 <button type="submit" class="btn btn-primary">Sign in</button>
+	 </form>
+	 
+	 <div class="dropdown-divider"></div>
+	 <a class="dropdown-item" href="#">New around here? Sign up</a>
+	 <a class="dropdown-item" href="#">Fogot password? Sign up</a>
+	 <a href="#" class="dropdown-item active">Ссылка №1</a>
+	 <a href="#" class="dropdown-item">Ссылка №2</a>
+	 <a href="#" class="dropdown-item disabled">Ссылка №3</a>
+	</div>
+  </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
